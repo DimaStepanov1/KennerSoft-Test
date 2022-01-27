@@ -1,0 +1,97 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+
+.slider-item{
+    position: relative;
+    outline: none;
+}
+.text-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 488px;
+    text-align: center;
+}
+.text-block h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: bold;
+    color: #2F2F2F;
+}
+.under-h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #919191;
+    font-size: 16px;
+    line-height: 48px;
+    margin-top: 20px;
+}
+.slider-item img{
+    width: 100%;
+}
+.slider-wrapper{
+    position: relative;
+}
+.prev, .next{
+    position: absolute;
+    z-index: 2;
+    left: 45px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: fit-content !important;
+    height: fit-content !important;
+    background: unset;
+    background-color: unset;
+    outline: none;
+    border: none;
+}
+svg path{
+    transition: all .3s ease;
+}
+.next{
+    left: unset;
+    right: 45px;
+}
+button:hover{
+    cursor: pointer;
+}
+button:hover svg path{
+    fill: #2F2F2F;
+}
+.slick-dots{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    max-width: 65px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 50px;
+}
+.slick-dots li{
+    margin-left: 5px;
+    margin-right: 5px;
+   
+}
+.slick-dots button{
+    border-radius: 50%;
+    color: #fff;
+    background-color: #fff;
+    outline: none;
+    width: 21px;
+    height: 21px;
+    border: 3px solid #919191;
+    transition: all .3s ease;
+}
+.slick-dots .slick-active button{
+    border: 3px solid #0099D2;
+}
